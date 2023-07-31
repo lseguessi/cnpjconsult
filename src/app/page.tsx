@@ -10,7 +10,8 @@ export default function Home() {
 
   async function getDataFromCNPJ() {
     const resp = await axios.get(
-      `https://www.receitaws.com.br/v1/cnpj/${cnpj}`,
+      // `https://www.receitaws.com.br/v1/cnpj/${cnpj}`,
+      `https://api-publica.speedio.com.br/buscarcnpj?cnpj=${cnpj}`,
       {
         headers: {
           "Content-Type": "application/json",
